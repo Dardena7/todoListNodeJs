@@ -25,15 +25,15 @@ mongoose.connect(process.env.DB_CONNECTION, {
   useUnifiedTopology: true
 });
 
-let task1 = new Task({
-    name: "Second task",
-    description: "Description of the second task",
-    status: false
-});
+// let task1 = new Task({
+//     name: "Second task",
+//     description: "Description of the second task",
+//     status: false
+// });
 
-task1.save(function(err) {
-    if(err) throw err;
-    console.log("Task Saved !");
-})
+// task1.save(function(err) {
+//     if(err) throw err;
+//     console.log("Task Saved !");
+// })
 
 app.listen(process.env.PORT);
